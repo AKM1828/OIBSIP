@@ -1,0 +1,396 @@
+/*fonts used in styling */
+@import url("https://fonts.google.com/specimen/Poppins");
+@import url("https://fonts.google.com/specimen/Roboto+Condensed");
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2cb179;
+    clip-path: circle(200px at left 5px);
+    
+}
+
+/*styling for side bar*/
+
+.sidebar {
+    background-color: rgb(197, 206, 206);
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    height: 120vh;
+    transition: transform 0.3s ease-in;
+    
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+/*styling for sidebar contents*/
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    
+}
+.title{
+    margin-left: 110px;
+}
+.title h0 span{
+    color: crimson;
+}
+
+/*styling for pages in website*/
+
+.main {
+    /*background-clour yellow*/
+    width: 200%;
+    min-height: 10vw;
+    padding: 26px;
+}
+
+.container {
+    display: flex;
+}
+
+/*Styling for page contants*/
+
+.Infocontainer {
+    /*background: rgb(202,9,128);*/
+    height: 68vh;
+    max-width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.devpic img {
+    height: 58vh;
+}
+
+.Hello {
+    font-size: 3em;
+
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+}
+.about span{
+    color: crimson;
+}
+
+.moreabout {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 23px;
+}
+
+/*Styling for buttons*/
+
+.buttons {
+   
+    margin-top: 2.2em;
+    font-size: 20px;  
+    
+}
+
+
+.btn {
+    padding: 10px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 17px;
+}
+/*styling to hover sidebar*/
+
+.btn:hover {
+    background-color: rgb(255, 0, 0);
+    color: dodgerblue;
+}
+
+.devpic img {
+    height: 58vh;
+}
+/*Styling for contact form*/
+
+.contactform {
+    padding: 0px 14px;
+    margin: 0px;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+}
+
+.contactform h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 0;
+    
+}
+.contactform form{
+    margin: 0 40px;
+}
+
+.contactform form div {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /*width: 26vw;*/
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 8px;
+    color: blueviolet;
+    margin: 0 5px;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    max-width: 28px;
+    margin: 3px 0;
+
+}
+
+
+.blogitem{
+    margin: 20px;
+    font-family: 'Fira Sans',sans-serif;
+}
+
+h1{
+    font-family: 'Fira Sans',sans-serif;
+    margin: 23px;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.Intro h2{
+    font-family: 'Fira Sans',sans-serif;
+    margin: 50px;
+    font-size: 50px;
+}
+.Intro h2 span{
+    color: crimson;
+}
+.Intro{
+    margin-left: 22px;
+   
+}
+.Intro p{
+    font-family: 'Fira Sans',sans-serif;
+    margin: 12px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+.Image h7{
+    font-size: 50px;
+    font-family: 'Fira Sans',sans-serif;
+    margin: 50px;
+    font-weight: bold;
+}
+.Image h7 span{
+    color: crimson;
+   
+}
+
+/*Styling for skills criteria*/
+
+.skillContainer{
+     padding: 12px;
+     margin-left: 22px
+
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Fira Sans',sans-serif;
+    font-weight: 900px;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: brown;
+    border: 2px solid black ;
+}
+.hundread{
+    max-width: 500px;
+    background-color: green;
+}
+.fifty{
+    max-width: 250px;
+    background-color: rgb(9, 108, 169);
+}
+.t5{
+    max-width: 200px;
+    background-color: blue;
+}
+@media (max-width: 40rem){
+    *{
+        background-color: brown;
+    }
+    .buttons{
+        font-size: 10px;
+    }
+}
+    /*To use sidebar in exciting way*/
+.sidebarGo{
+    transform: translate3d(-443px, 0px, 0px);
+    position: absolute;
+}
+img.Ham{
+     margin-top: 12px;
+}
+.Hamburger{
+    position:absolute;
+    cursor: pointer;
+    top: 12px;
+    left: 10px;
+   
+}
+img.Cross {
+    margin-left: 175px;
+    margin-top: 12px;
+}
+
+/* In this section styling for My projrcts is done*/
+
+.Services h2{
+    margin: 30px auto;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+}
+.Services h2 span{
+    background-color: crimson;
+}
+
+/*stylimg for boxes in my projects */
+
+.box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    
+    
+}
+.box p{
+    text-align: center;
+}
+.card{
+    height:365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.card i{
+    font-size:25px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+}
+h3{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card.buttons{
+    border:2px solid transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.card.buttons:hover{
+    background-color: rgb(255, 0, 0);
+    color: dodgerblue;
+}
+h4{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 100px;
+}
+h4 span{
+    color: crimson;
+}
+.card:hover{
+    background-color: #8ee74e;
+}
+h5{
+    text-align:center;
+    font-size: 110px;
+    font-style: italic;
+    font-family: 'Ubuntu',sans-serif;
+}
+h5 span{
+    color: crimson;
+}
+.pra li{
+    text-align: left;
+}
+.pra li a{
+   
+    font-size: 30px;
+}
+.pra ol li{
+    color: #ffff;
+}
+/*styling ends here*/

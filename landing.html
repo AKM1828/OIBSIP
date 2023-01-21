@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream Parlour landing page</title>
+    <link rel="stylesheet" href="landing_style.css">
+</head>
+
+<body>
+    <section>
+        <!---TO Draw a Circle-->
+        <div class="circle"></div>
+        <header>
+            <!---Logo-->
+            <a href="#" class="logo">
+                <img src="icecreame1.png" class="logo">
+            </a>
+            <ul>
+                <!--ICONS-->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox"><br>
+                </br>
+                <!--Main Text-->
+                <h2>It is not just a Icecream <br>It's<span><b> IceCreamWala</b></span></h2>
+
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, libero vero. Dolorem, quisquam et ea
+                    labore in, illum quam iure laudantium quos
+                    facere commodi numquam nostrum quibusdam. Voluptatibus, reiciendis obcaecati?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit nesciunt quia labore,
+                    voluptatibus placeat officia iusto illo adipisci,
+                    harum, voluptatum at explicabo rem optio incidunt unde omnis totam sit!</p>
+                <a href="#">Learn More</a>
+                <!--Button-->
+                <div class="button1">
+                    <button><b>ORDERNOW</b></button>
+                </div>
+
+            </div>
+            <div class="imgBox">
+                <!--Circle Image-->
+                <img src="img21345.png" class="IceCreamWala">
+            </div>
+        </div>
+        <ul class="thumb">
+            <!--imgslider-->
+            <li><img src="img1.png" onclick="imgSlider('img1.png');changeCircleColour('#01743')"></li>
+            <li><img src="img2.png" onclick="imgSlider('img2.png');changeCircleColour('#eb7495')"></li>
+            <li><img src="img3.png" onclick="imgSlider('img3.png');changeCircleColour('#01743')"></li>
+        </ul>
+        <ul class="sci">
+            <!--Contact Info-->
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+    </section>
+    <!--Java Script-->
+    
+    <div class="Lower">
+        <footer>
+            <h3>@c Copyright IceCreamWala 2022 | All right reserved </h3>
+        </footer>
+    </div>
+</body>
+<script>
+    function imgSlider(anything) {
+        document.queryselector('.IceCreamWala').src = anything;
+    }
+    function changeCircleColour(colour) {
+        const circle = document.queryselector('.circle');
+        circle.style.background = colour;
+
+    }
+</script>
+
+</html>
